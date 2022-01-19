@@ -1,0 +1,8 @@
+bot:
+  username: "Angry Bot"
+  token: "5007014194:AAFmHgK5fLhOj0d6bdRdHZVjBwY14lx3vUU"
+
+spring:
+  main:
+    banner-mode: off
+    allow-circular-references: true
