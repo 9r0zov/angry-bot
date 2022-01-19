@@ -54,6 +54,8 @@ public class AngryBot extends TelegramLongPollingBot {
             getSendMessage(update)
                     .ifPresent(message -> {
                         try {
+                            log.info("Responding to message {{}} with response {{}}",
+                                    update.getMessage(), message);
                             execute(message);
                         } catch (TelegramApiException e) {
                             log.error("Can't execute message", e);
