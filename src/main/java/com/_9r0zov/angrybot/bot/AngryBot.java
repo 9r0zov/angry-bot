@@ -10,8 +10,6 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
-import javax.annotation.PostConstruct;
-import java.util.List;
 import java.util.Optional;
 import java.util.Random;
 
@@ -62,11 +60,6 @@ public class AngryBot extends TelegramLongPollingBot {
                         }
                     });
         }
-    }
-
-    @Override
-    public void onUpdatesReceived(List<Update> updates) {
-        super.onUpdatesReceived(updates);
     }
 
     private Optional<SendMessage> getSendMessage(Update update) {
